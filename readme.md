@@ -107,38 +107,38 @@ Raspberry Pi3B+２機(測定用、データベース用)
 Windowsを選択します。自動的にダウンロードされます。
 インストールします(先生の権限が必要になると思います)
 
-![gazou](画像1.png)
+![gazou](./image/画像1.png)
 
 Windowsを選択します。自動的にダウンロードされます。
 インストールします(先生の権限が必要になると思います)
 
-![gazou](画像2.png)
+![gazou](./image/画像2.png)
 
 ## VSC日本語化パッチ
 
 VSCを日本語表示にできます。
 
-![gazou](画像3.png)
+![gazou](./image/画像3.png)
 
 extensionsの検索欄にjapaneseと検索し、上記の拡張機能をインストールします。
 
-![gazou](画像4.png)
+![gazou](./image/画像4.png)
 
 画面上部の検索欄から、Show and Run Commandsを選択します。
 
-![gazou](画像5.png)
+![gazou](./image/画像5.png)
 
 Configure Display Languageを選択します。
 
-![gazou](画像6.png)
+![gazou](./image/画像6.png)
 
 日本語を選択します。
 
-![gazou](画像7.png)
+![gazou](./image/画像7.png)
 
 Restartを押下します
 
-![gazou](画像8.png)
+![gazou](./image/画像8.png)
 
 日本語になりました。
 
@@ -146,7 +146,7 @@ Restartを押下します
 
 ファイルから自動保存をオンにしておきます。
 
-![gazou](画像9.png)
+![gazou](./image/画像9.png)
 
 ## Pythonのインストール(必須)
 
@@ -154,14 +154,14 @@ Restartを押下します
 検索欄にpythonと入力し、画像の拡張機能をインストールします。
 Planceも付随してインストールされますが問題はありません。
 
-![gazou](画像10.png)
+![gazou](./image/画像10.png)
 
 ## リモートエクスプローラーのインストール(必須)
 
 検索欄にRemote Developmentと入力し、画像の拡張機能をインストールします。
 付随して何種類かの拡張機能がインストールされますが問題はありません。
 
-![gazou](画像11.png)
+![gazou](./image/画像11.png)
 
 ## Pythonを使う上で便利な拡張機能やプラグイン
 
@@ -172,7 +172,7 @@ Planceも付随してインストールされますが問題はありません�
 Pythonを書く上で、インデントは重要な要素になります。
 綺麗にそろっているか視覚的に確認できる優れものです。
 
-![gazou](画像12.png)
+![gazou](./image/画像12.png)
 
 ### Evillinspector
 
@@ -180,7 +180,7 @@ Pythonを書く上で、インデントは重要な要素になります。
 全角スペースを検出して視覚的に教えてくれます。
 本当に便利です。
 
-![gazou](画像13.png)
+![gazou](./image/画像13.png)
 
 ### Print
 
@@ -191,12 +191,12 @@ Pythonを書く上で、インデントは重要な要素になります。
 
 プログラムを編集し終わったら、編集したプログラムを表示した状態で画面右上の印刷マークをクリックします。
 
-![gazou](画像14.png)
+![gazou](./image/画像14.png)
 
 コードを印刷することができます。
 結構便利です。
 
-![gazou](画像15.png)
+![gazou](./image/画像15.png)
 
 # Raspberry Piのセッティング
 
@@ -207,35 +207,35 @@ Pythonを書く上で、インデントは重要な要素になります。
 
 <https://www.raspberrypi.com/software/> にアクセスする。
 
-![gazou](画像16.png)
+![gazou](./image/画像16.png)
 
 Download for Windowsからimagerをダウンロード＆インストール
 (インストールの過程で管理者権限が必要になるので先生にお願いしてください)
 
-![gazou](画像17.png)
+![gazou](./image/画像17.png)
 
 Imagerの起動画面です。
 デバイスを選択の項目は
 
-![gazou](画像18.png)
+![gazou](./image/画像18.png)
 
 Raspberry PI 3を選択します。
 
 OSは
 
-![gazou](画像19.png)
+![gazou](./image/画像19.png)
 
 Legacyで大丈夫です。
 
 ストレージを選択(容量でSDカードを判断してください)
 
-![gazou](画像20.png)
+![gazou](./image/画像20.png)
 
-![gazou](画像21.png)
+![gazou](./image/画像21.png)
 
 “設定を編集“を選択。
 
-![gazou](画像22.png)
+![gazou](./image/画像22.png)
 
 ユーザー名とパスワード、ロケール設定を編集します。
 ユーザー名はipsa
@@ -244,23 +244,23 @@ Legacyで大丈夫です。
 キーボードレイアウトはjp(usキーボードの場合はus)
 に設定します。(ユーザー名とパスワードは先生の指示に合わせて適宜変更してください)
 
-![gazou](画像23.png)
+![gazou](./image/画像23.png)
 
 サービスの欄でSSHを有効化しておきます。
 
-![gazou](画像24.png)
+![gazou](./image/画像24.png)
 
 “いいえ“を押下します。
 
-![gazou](画像25.png)
+![gazou](./image/画像25.png)
 
 “はい”を押下します。
 
-![gazou](画像26.png)
+![gazou](./image/画像26.png)
 
 完了するまで待機します。
 
-![gazou](画像27.png)
+![gazou](./image/画像27.png)
 
 SDカードリーダーから取り出します。
 
@@ -281,19 +281,19 @@ SSHでVSCとラズパイを接続し、ラズパイに保存されたプログ�
 
 画面左下の＞＜マークをクリックします。
 
-![gazou](画像28.png)
+![gazou](./image/画像28.png)
 
 画面上部の検索欄が開くので、“ホストに接続する“を選択します。
 
-![gazou](画像29.png)
+![gazou](./image/画像29.png)
 
 “SSHホストを構成する“を選択します。
 
-![gazou](画像30.png)
+![gazou](./image/画像30.png)
 
 フォルダを選択します。一番上に出てきたもので大丈夫だと思います。
 
-![gazou](画像31.png)
+![gazou](./image/画像31.png)
 
 このような画面が出てきます。
 
@@ -302,7 +302,7 @@ Host:識別用の名前を入力します。
 Hostname:接続先のラズパイのIPアドレスを入力します。
 User:接続先のラズパイのユーザー名を入力します。
 
-![gazou](画像32.png)
+![gazou](./image/画像32.png)
 
 Ctrl+Sで保存します。
 
