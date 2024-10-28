@@ -29,16 +29,17 @@ slack_SW_tuuti = "水が減っています"
 slack_SW_tuuti_1 = "水はあります"
 
 def DBjob():
-    slack = slackweb.Slack(url ="https://hooks.slack.com/services/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")
+    slack = slackweb.Slack(url ="incomming web hookのURLです")
     print("start")
     try:
         # Python Style
         DBConnector = mariadb.connect(
-        user="ipsa",
-        password="ipsa2221",
-        host="157.13.24.163",
-        port=3306,
-        database="23project_test"
+        user="XXX",
+        password="XXXX",
+        host="XXX.XXX.XXX.XXX",
+        port=XXX
+        ,
+        database="XXXX"
         )
         print(f"CONNECT SUCCESSED")
     except mariadb.Error as e:
@@ -84,7 +85,7 @@ def DBjob():
     slack.notify(text = slack_DB_tuuti)
 
 def SWjob():
-    slack = slackweb.Slack(url ="https://hooks.slack.com/services/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")
+    slack = slackweb.Slack(url ="incomming webhook のURLです")
     time.sleep(1)   
     float_switch_status = GPIO.input(float_SW_GPIO)
 
