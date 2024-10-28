@@ -150,7 +150,7 @@ slack_SW_tuuti = "水が減っています"
 slack_SW_tuuti_1 = "水はあります"
 
 def DBjob():
-    slack = slackweb.Slack(url ="https://hooks.slack.com/services/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")
+    slack = slackweb.Slack(url ="incomming webhook のURLです")
     print("start")
     try:
         # Python Style
@@ -205,7 +205,7 @@ def DBjob():
     slack.notify(text = slack_DB_tuuti)
 
 def SWjob():
-    slack = slackweb.Slack(url ="https://hooks.slack.com/services/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")
+    slack = slackweb.Slack(url ="incomming webhookのURLです")
     time.sleep(1)   
     float_switch_status = GPIO.input(float_SW_GPIO)
 
