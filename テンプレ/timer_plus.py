@@ -10,7 +10,7 @@ import logging
 time.sleep(60)
 
 # ログ設定
-logging.basicConfig(filename='/data/scripts/rpi.log',
+logging.basicConfig(filename='./rpi.log',
                     encoding='utf-8',
                     level=logging.DEBUG,
                     format='[%(asctime)s] %(message)s',
