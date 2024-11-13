@@ -28,21 +28,7 @@ signal.signal(signal.SIGTERM, handler)
 
 def main():
     # 変数宣言
-    current_time = datetime.datetime.now()
-    sw1_lastpush_time = datetime.datetime.now()
-    sw2_lastpush_time = datetime.datetime.now()
-    LED_on_time = datetime.datetime.now()
-    LED_off_time = datetime.datetime.now()
-    execute_time = datetime.datetime.now()
-    sleep_interval = 0.1
-    main_execute_interval = datetime.timedelta(seconds=10)
-    gpio_execute_interval = datetime.timedelta(seconds=20)
-
-    sw1_active = False
-    sw2_active = False
-    bme280_active = False
     LED_active = True
-    dbresult = None
 
 
     # GPIO初期化
@@ -52,8 +38,7 @@ def main():
         GPIO.setmode(GPIO.BOARD)
         # Pure GPIO
         # ------------------------------------------
-        #確認用LED : (pin-40)
-        #栽培用LED : (pin-38)
+        #栽培用LED : (pin-37)
         # ------------------------------------------
         # LED用のGPIOを設定
         GPIO.setup(37, GPIO.OUT, initial=GPIO.HIGH)
