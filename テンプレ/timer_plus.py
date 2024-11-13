@@ -44,9 +44,6 @@ def main():
         GPIO.setup(37, GPIO.OUT, initial=GPIO.HIGH)
         # GPIOのセットアップに問題なし
         logging.info('GPIO SETUP : COMPLETE')
-        #GPIO.output(21, GPIO.HIGH)
-        #GPIO.output(23, GPIO.HIGH)
-        GPIO.output(40, GPIO.HIGH)
 
     except Exception as gpio_setup_e:
         logging.error('GPIO SETUP ERROR:' + str(gpio_setup_e))
